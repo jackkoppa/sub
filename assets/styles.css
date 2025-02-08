@@ -1,12 +1,132 @@
+@font-face {
+    font-family: 'saira_condensedblack';
+    src: url('sairacondensed-black-webfont.woff2') format('woff2'),
+         url('sairacondensed-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    font-family: 'saira_condensedblack';
     background: url('./dark-blue-background-small.jpg');
     margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page-wrapper {
+    padding-bottom: 200px;
+}
+
+.header-images {
+    display: flex;
+    height: 10vh;
+    max-height: 175px;
+    padding: 1rem;
+    align-items: center;
+}
+
+.lego-image {
+    /* visually center */
+    height: 90%;
+    margin-top: 0.5rem;
+}
+
+.patch-image {
+    height: 100%;
+}
+
+.image-and-download-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .image-and-download-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.sub-image-wrapper {
+    max-width: 600px;
+    flex: 40% 0 1;
+    padding: 1rem;
+}
+.sub-image {
+    width: 100%;
+    height: auto;
+}
+
+.set-title {
+    color: #fff;
+    text-align: right;
+    padding: 2rem;
+    flex: 20% 1 0;
+    min-width: 300px;
+}
+
+.download-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex: 20% 1 1;
+    min-width: 200px;
+    padding: 2rem;
+}
+
+.download-button {
+    display: block;
+    background-color: #fff;
+    padding: 2rem;
+    border: none;
+    color: #201f2d;
+    width: auto;
+    flex-wrap: wrap;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.download-button:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.download-button > strong {
+    font-size: 2rem;
+}
+
+.download-button > em {
+    font-size: 1rem;
+}
+
+.instructions-and-footer-image-wrapper {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .instructions-and-footer-image-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.instructions {
+    color: #fff;
 }
 
 .footer {
     background: url('./pieces-gray-background.jpg');
-    background-repeat: repeat-x;
-    height: 10%;
+    background-repeat: repeat;
+    background-size: contain;
+    height: 10vh;
     max-height: 200px;
     width: 100%;
     position: fixed;
