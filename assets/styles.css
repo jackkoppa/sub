@@ -1,10 +1,17 @@
+@font-face {
+    font-family: 'saira_condensedblack';
+    src: url('sairacondensed-black-webfont.woff2') format('woff2'),
+         url('sairacondensed-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    font-family: 'saira_condensedblack';
     background: url('./dark-blue-background-small.jpg');
     margin: 0;
     height: 100vh;
     width: 100vw;
-    /* TODO: Switch to Saria Condensed after getting webfont from Font Squirrel */
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .page-wrapper {
